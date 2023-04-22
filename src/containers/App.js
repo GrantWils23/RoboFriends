@@ -73,19 +73,18 @@ class App extends Component {
         return !robots.length ? 
         (
             <div className="tc pa3">
-                <h1> Loading </h1>{" "}
+                <h1> Loading </h1>
             </div>
     ) : (
         <div className="tc">
-          <h1 className="f1"> RoboFriends </h1>{" "}
-          <SearchBox searchChange={this.onSearchChange} />{" "}
+          <h1 className="f1"> RoboFriends </h1>
+          <SearchBox searchChange={this.onSearchChange} />
           <Scroll>
-            {" "}
             <ErrorBoundry>
-            {/* <CardList robots = { robots }/> */}{" "}
-            <CardList robots={filteredRobots} />{" "}
+            {/* <CardList robots = { robots }/> */}
+            <CardList robots={filteredRobots} />
             </ErrorBoundry>
-          </Scroll>{" "}
+          </Scroll>
         </div>
         );
     }
